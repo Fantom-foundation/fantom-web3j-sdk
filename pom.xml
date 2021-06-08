@@ -15,6 +15,7 @@
         <module>opera</module>
         <module>contracts</module>
         <module>evm</module>
+        <module>evm-example</module>
     </modules>
 
     <build>
