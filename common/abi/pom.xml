@@ -3,13 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>org.fantom-web3j.common</groupId>
+        <groupId>foundation.fantom.web3.common</groupId>
         <artifactId>common</artifactId>
         <version>0.1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.fantom-web3j.common.abi</groupId>
+    <groupId>foundation.fantom.web3.common.abi</groupId>
     <artifactId>abi</artifactId>
     <version>0.1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -41,7 +41,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.fantom-web3j.common.utils</groupId>
+            <groupId>foundation.fantom.web3.common.utils</groupId>
             <artifactId>utils</artifactId>
             <version>${project.version}</version>
         </dependency>

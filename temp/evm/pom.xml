@@ -12,7 +12,7 @@
     <groupId>foundation.fantom.web3.evm</groupId>
     <artifactId>evm</artifactId>
     <version>0.1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <properties>
         <junitVersion>5.7.0-RC1</junitVersion>
@@ -23,33 +23,12 @@
         <logbackVersion>1.2.3</logbackVersion>
         <guavaVersion>28.1-jre</guavaVersion>
         <jacksonVersion>2.10.0</jacksonVersion>
-        <klaxonVersion>5.5</klaxonVersion>
+        <klaxonVersion>5.0.1</klaxonVersion>
         <kotlinVersion>1.4.10</kotlinVersion>
-        <besuPluginVersion>21.7.0-RC1-SNAPSHOT</besuPluginVersion>
-        <besuInternalVersion>21.7.0-RC1-SNAPSHOT</besuInternalVersion>
-<!--        <besuCryptoDepVersion>0.3.0</besuCryptoDepVersion>-->
-        <besuCryptoDepVersion>0.3.1-SNAPSHOT</besuCryptoDepVersion>
+        <besuPluginVersion>20.10.2</besuPluginVersion>
+        <besuInternalVersion>20.10.2</besuInternalVersion>
+        <besuCryptoDepVersion>0.3.0</besuCryptoDepVersion>
     </properties>
-
-    <repositories>
-        <repository>
-            <id>jfrog-repo</id>
-            <url>https://hyperledger.jfrog.io/artifactory/besu-maven</url>
-        </repository>
-        <repository>
-            <id>consensys-repo</id>
-            <url>https://cloudsmith.io/~consensys/repos/maven/packages/</url>
-        </repository>
-
-<!--        <repository>-->
-<!--            <id>besu-repo</id>-->
-<!--            <url>https://bintray.com/hyperledger-org/besu-repo/</url>-->
-<!--        </repository>-->
-<!--        <repository>-->
-<!--            <id>mvnrepository</id>-->
-<!--            <url>https://mvnrepository.com/artifact/</url>-->
-<!--        </repository>-->
-    </repositories>
 
     <build>
         <plugins>
@@ -80,6 +59,18 @@
             <groupId>foundation.fantom.web3.core</groupId>
             <artifactId>core</artifactId>
             <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>foundation.fantom.web3.core</groupId>
+            <artifactId>core</artifactId>
+            <version>${project.version}</version>
+            <type>test-jar</type>
+        </dependency>
+
+        <dependency>
+            <groupId>org.web3j</groupId>
+            <artifactId>core</artifactId>
+            <version>${web3jVersion}</version>
         </dependency>
 
         <dependency>
